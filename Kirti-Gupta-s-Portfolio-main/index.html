@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIRTI GUPTA — Creative Designer & Digital Director</title>
+  <meta name="description" content="Minimalist Swiss-inspired portfolio of Kirti Gupta. Creative UX/UI Designer, Brand Architect & Product Visualizer crafting luxury digital experiences.">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- RemixIcon for minimal icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Dual Magnetic Cursor -->
+  <div class="custom-cursor" id="custom-cursor">
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring">
+      <span class="cursor-text" id="cursor-text"></span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo magnetic-target">
+        <span class="logo-text">KIRTI</span><span class="logo-symbol">©</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#about" class="nav-link magnetic-target">About</a>
+        <a href="#services" class="nav-link magnetic-target">Services</a>
+        <a href="#portfolio" class="nav-link magnetic-target">Portfolio</a>
+        <a href="#process" class="nav-link magnetic-target">Process</a>
+        <a href="#contact" class="nav-link magnetic-target">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <span class="availability-badge">
+          <span class="status-dot"></span> Available 2026
+        </span>
+        <button class="menu-toggle magnetic-target" id="menu-toggle" aria-label="Toggle Menu">
+          <span class="menu-line line-1"></span>
+          <span class="menu-line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <nav class="mobile-nav">
+        <a href="#about" class="mobile-link">01 / About</a>
+        <a href="#services" class="mobile-link">02 / Services</a>
+        <a href="#portfolio" class="mobile-link">03 / Portfolio</a>
+        <a href="#process" class="mobile-link">04 / Process</a>
+        <a href="#contact" class="mobile-link">05 / Contact</a>
+      </nav>
+      <div class="mobile-footer">
+        <p>©2026 KIRTI GUPTA — SWISS DESIGN SYSTEM</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Canvas Wrapper -->
+  <div class="page-wrapper" id="smooth-wrapper">
+    <main class="page-content" id="smooth-content">
+
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-container">
+          
+          <!-- Abstract Floating Geometric UI Elements -->
+          <div class="hero-shapes">
+            <div class="shape shape-circle float-element" data-speed="0.04"></div>
+            <div class="shape shape-ring float-element" data-speed="-0.03"></div>
+            <div class="shape shape-pill float-element" data-speed="0.05">
+              <span class="pill-dot"></span> UX/UI ARCHITECTURE
+            </div>
+            <div class="shape shape-switch float-element" data-speed="-0.04">
+              <div class="switch-handle"></div>
+            </div>
+            <svg class="shape shape-dotted-path float-element" data-speed="0.02" width="220" height="120" viewBox="0 0 220 120">
+              <path d="M 10 10 Q 110 110 210 10" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="4 6" />
+            </svg>
+            <div class="shape shape-card float-element" data-speed="-0.05">
+              <span class="card-label">EST.</span>
+              <span class="card-val">2021</span>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-meta stagger-hero">
+              <span class="hero-tag">DIGITAL PRODUCT ARCHITECT</span>
+              <span class="hero-coord">46.2044° N, 6.1432° E</span>
+            </div>
+
+            <h1 class="hero-title stagger-hero">
+              <span class="title-row block-row">KIRTI</span>
+              <span class="title-row block-row">GUPTA</span>
+            </h1>
+
+            <div class="hero-subtext-wrapper stagger-hero">
+              <div class="hero-subtitle">
+                CREATIVE <span class="outlined-text">DESIGNER</span>
+              </div>
+              <p class="hero-description">
+                Crafting high-contrast editorial interface systems, luxury brand identities, and immersive digital platforms.
+              </p>
+            </div>
+
+            <div class="hero-cta-group stagger-hero">
+              <a href="#portfolio" class="btn btn-primary magnetic-target">
+                <span>Explore Works</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a href="#contact" class="btn btn-outlined magnetic-target">
+                <span>Initiate Contact</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-scroll-indicator">
+          <span class="scroll-text">SCROLL TO DISCOVER</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about-section" id="about">
+        <div class="container main-card-container">
+          
+          <div class="section-header">
+            <span class="section-num">01 // ABOUT</span>
+            <h2 class="about-headline reveal-text">
+              TURNING IDEAS INTO MEANINGFUL DIGITAL EXPERIENCES.
+            </h2>
+          </div>
+
+          <svg class="divider-line" viewBox="0 0 100 2" preserveAspectRatio="none">
+            <line x1="0" y1="1" x2="100" y2="1" stroke="#111111" stroke-width="0.5"/>
+          </svg>
+
+          <div class="about-grid">
+            <div class="about-col about-left">
+              <p class="about-lead">
+                Focused on minimal Swiss geometry, high typography discipline, and hyper-polished micro-interactions.
+              </p>
+              <p class="about-body">
+                I bridge the gap between design aesthetic and production-ready implementation, creating digital interfaces that feel alive, effortless, and distinctly high-end.
+              </p>
+              <div class="about-badges">
+                <span class="badge">Awwwards Site of the Day × 3</span>
+                <span class="badge">FWA Winner × 2</span>
+              </div>
+            </div>
+
+            <div class="about-col about-right">
+              <div class="info-table">
+                <div class="info-row">
+                  <span class="info-label">EXPERIENCE</span>
+                  <span class="info-value">5+ Years Industry Practice</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">LOCATION</span>
+                  <span class="info-value">Geneva / Remote Worldwide</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">AVAILABILITY</span>
+                  <span class="info-value">Q3/Q4 2026 Design Audits</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">SPECIALIZATION</span>
+                  <span class="info-value">Design Systems & Luxury UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section services-section" id="services">
+        <div class="container main-card-container">
+          
+          <div class="section-header">
+            <span class="section-num">02 // CAPABILITIES</span>
+            <h2 class="section-title reveal-text">SERVICES & EXPERTISE</h2>
+          </div>
+
+          <div class="services-list">
+            
+            <div class="service-row magnetic-target" data-service="ux-ui">
+              <div class="service-index">01</div>
+              <div class="service-title-group">
+                <h3 class="service-title">UX/UI Design</h3>
+                <span class="service-sub">Interface Architecture, Web Apps, Mobile Systems</span>
+              </div>
+              <div class="service-action">
+                <div class="arrow-circle">
+                  <i class="ri-arrow-right-up-line"></i>
+                </div>
+              </div>
+              <div class="service-drawer">
+                <div class="drawer-content">
+                  <p>Comprehensive design systems, intuitive wireframing, high-fidelity prototypes, and component library creation built for scalability.</p>
+                  <ul class="drawer-tags">
+                    <li>Figma</li>
+                    <li>Design Tokens</li>
+                    <li>Prototyping</li>
+                    <li>User Testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-row magnetic-target" data-service="brand">
+              <div class="service-index">02</div>
+              <div class="service-title-group">
+                <h3 class="service-title">Brand Identity</h3>
+                <span class="service-sub">Visual Systems, Typography, Art Direction</span>
+              </div>
+              <div class="service-action">
+                <div class="arrow-circle">
+                  <i class="ri-arrow-right-up-line"></i>
+                </div>
+              </div>
+              <div class="service-drawer">
+                <div class="drawer-content">
+                  <p>Designing modern luxury identities, Swiss typographic standards, brand guidelines, and spatial brand assets.</p>
+                  <ul class="drawer-tags">
+                    <li>Brand Book</li>
+                    <li>Identity Systems</li>
+                    <li>Typography</li>
+                    <li>Packaging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-row magnetic-target" data-service="web">
+              <div class="service-index">03</div>
+              <div class="service-title-group">
+                <h3 class="service-title">Web Design</h3>
+                <span class="service-sub">Editorial Layouts, Interactive WebGL, Motion</span>
+              </div>
+              <div class="service-action">
+                <div class="arrow-circle">
+                  <i class="ri-arrow-right-up-line"></i>
+                </div>
+              </div>
+              <div class="service-drawer">
+                <div class="drawer-content">
+                  <p>High-performance digital experiences with 60fps animations, GSAP storytelling, and custom interaction design.</p>
+                  <ul class="drawer-tags">
+                    <li>Editorial Web</li>
+                    <li>GSAP Animation</li>
+                    <li>Responsive Architecture</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-row magnetic-target" data-service="direction">
+              <div class="service-index">04</div>
+              <div class="service-title-group">
+                <h3 class="service-title">Creative Direction</h3>
+                <span class="service-sub">Concept Development, Product Strategy, Audits</span>
+              </div>
+              <div class="service-action">
+                <div class="arrow-circle">
+                  <i class="ri-arrow-right-up-line"></i>
+                </div>
+              </div>
+              <div class="service-drawer">
+                <div class="drawer-content">
+                  <p>Strategic visual positioning for luxury brands, high-end startups, and global technology innovators.</p>
+                  <ul class="drawer-tags">
+                    <li>Product Vision</li>
+                    <li>Design Audits</li>
+                    <li>Content Strategy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container main-card-container">
+          
+          <div class="section-header space-between">
+            <div>
+              <span class="section-num">03 // SELECTED WORKS</span>
+              <h2 class="section-title reveal-text">FEATURED PROJECTS</h2>
+            </div>
+            <div class="portfolio-filter">
+              <span class="filter-btn active" data-filter="all">ALL (04)</span>
+              <span class="filter-btn" data-filter="ui">UI/UX</span>
+              <span class="filter-btn" data-filter="brand">BRAND</span>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+
+            <!-- Card 1 -->
+            <article class="project-card magnetic-target" data-cursor="VIEW PROJECT" data-category="ui">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" alt="AURA Architecture" class="project-img" loading="lazy">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <div class="card-title-group">
+                  <h3 class="project-title">AURA ARCHITECTURE</h3>
+                  <span class="project-cat">Spatial Web & Editorial UI</span>
+                </div>
+                <div class="card-year">2026</div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="project-card magnetic-target" data-cursor="VIEW PROJECT" data-category="brand">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1400&auto=format&fit=crop" alt="KRONOS Swiss Watches" class="project-img" loading="lazy">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <div class="card-title-group">
+                  <h3 class="project-title">KRONOS TIMEPIECES</h3>
+                  <span class="project-cat">Brand Identity & Digital Store</span>
+                </div>
+                <div class="card-year">2025</div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="project-card magnetic-target" data-cursor="VIEW PROJECT" data-category="ui">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400&auto=format&fit=crop" alt="NEURAL AI PLATFORM" class="project-img" loading="lazy">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <div class="card-title-group">
+                  <h3 class="project-title">NEURAL ANALYTICS</h3>
+                  <span class="project-cat">Complex SaaS Interface</span>
+                </div>
+                <div class="card-year">2025</div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="project-card magnetic-target" data-cursor="VIEW PROJECT" data-category="brand">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1400&auto=format&fit=crop" alt="LUMEN MAGAZINE" class="project-img" loading="lazy">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <div class="card-title-group">
+                  <h3 class="project-title">LUMEN EDITIONS</h3>
+                  <span class="project-cat">Typography & Art Direction</span>
+                </div>
+                <div class="card-year">2024</div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Project Modal Overlay -->
+      <div class="project-modal" id="project-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-card">
+          <button class="modal-close" id="modal-close"><i class="ri-close-line"></i></button>
+          <div class="modal-header">
+            <span class="modal-tag" id="modal-tag">CATEGORY</span>
+            <h2 class="modal-title" id="modal-title">PROJECT TITLE</h2>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="Project Detail" class="modal-img" id="modal-img">
+            <div class="modal-desc">
+              <p>An in-depth exploration into minimal UI systems, bespoke interaction design, and high-performance frontend engineering tailored for modern luxury audiences.</p>
+              <a href="#" class="btn btn-primary">Live Experience <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Section -->
+      <section class="section process-section" id="process">
+        <div class="container main-card-container">
+          
+          <div class="section-header">
+            <span class="section-num">04 // WORKFLOW</span>
+            <h2 class="section-title reveal-text">THE DESIGN PROCESS</h2>
+          </div>
+
+          <div class="process-timeline">
+            
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <div class="step-content">
+                <h3 class="step-title">Research & Audit</h3>
+                <p class="step-desc">Deconstructing market context, user psychology, visual benchmarks, and technical requirements.</p>
+              </div>
+              <div class="step-arrow"><i class="ri-arrow-down-line"></i></div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <div class="step-content">
+                <h3 class="step-title">Wireframe & System</h3>
+                <p class="step-desc">Building structural information architecture, layout grids, and core typographic hierarchy.</p>
+              </div>
+              <div class="step-arrow"><i class="ri-arrow-down-line"></i></div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <div class="step-content">
+                <h3 class="step-title">Interactive Prototype</h3>
+                <p class="step-desc">Crafting high-fidelity UI states, motion curves, micro-interactions, and visual direction.</p>
+              </div>
+              <div class="step-arrow"><i class="ri-arrow-down-line"></i></div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <div class="step-content">
+                <h3 class="step-title">Development Sync</h3>
+                <p class="step-desc">Translating visual specs to 60fps code, responsive layouts, and GSAP animation triggers.</p>
+              </div>
+              <div class="step-arrow"><i class="ri-arrow-down-line"></i></div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-num">05</div>
+              <div class="step-content">
+                <h3 class="step-title">Launch & Refine</h3>
+                <p class="step-desc">QA testing, performance tuning, Lighthouse audits, and seamless production deployment.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="section stats-section" id="stats">
+        <div class="container main-card-container">
+          <div class="stats-grid">
+            
+            <div class="stat-item">
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">COMPLETED PROJECTS</span>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">GLOBAL BRANDS</span>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">YEARS EXPERIENCE</span>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-number-wrapper">
+                <span class="stat-number" data-target="99">0</span><span class="stat-percent">%</span>
+              </div>
+              <span class="stat-label">SATISFACTION RATE</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section testimonials-section" id="testimonials">
+        <div class="container main-card-container">
+          
+          <div class="section-header space-between">
+            <div>
+              <span class="section-num">05 // ENDORSEMENTS</span>
+              <h2 class="section-title reveal-text">CLIENT TESTIMONIALS</h2>
+            </div>
+            <div class="testimonial-controls">
+              <button class="t-btn t-prev magnetic-target" id="t-prev" aria-label="Previous"><i class="ri-arrow-left-line"></i></button>
+              <button class="t-btn t-next magnetic-target" id="t-next" aria-label="Next"><i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+
+          <div class="testimonial-slider-container" id="testimonial-slider">
+            <div class="testimonial-track">
+              
+              <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">
+                  Kirti delivered a visual identity and web architecture that completely elevated our brand into international luxury spaces. Exceptional precision.
+                </p>
+                <div class="testimonial-author">
+                  <span class="author-name">MARKUS VANE</span>
+                  <span class="author-title">FOUNDER, KRONOS WATCHES</span>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">
+                  Rarely do you find a designer who understands both Swiss typographic aesthetics and high-performance interactive code. Outstanding execution.
+                </p>
+                <div class="testimonial-author">
+                  <span class="author-name">ELENA ROSTOVA</span>
+                  <span class="author-title">VP OF DESIGN, NEURAL</span>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">
+                  The micro-interactions and smooth transitions Kirti crafted gave our platform an award-winning edge. Seamless communication throughout.
+                </p>
+                <div class="testimonial-author">
+                  <span class="author-name">JULIAN SCHMIDT</span>
+                  <span class="author-title">CREATIVE DIRECTOR, AURA</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Section (Pure Black Container) -->
+      <section class="section contact-section" id="contact">
+        <div class="container dark-card-container">
+          
+          <div class="contact-header">
+            <span class="contact-tag">INITIATE COLLABORATION</span>
+            <h2 class="contact-headline">SEND YOUR REQUEST</h2>
+            <h3 class="contact-subheadline">LET'S BUILD SOMETHING EXTRAORDINARY.</h3>
+          </div>
+
+          <form class="contact-form" id="contact-form" onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <input type="email" id="email-input" class="contact-input" placeholder=" " required>
+              <label for="email-input" class="floating-label">Enter your email address...</label>
+              <button type="submit" class="submit-circle-btn magnetic-target" aria-label="Submit">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+            <p class="form-status" id="form-status"></p>
+          </form>
+
+          <!-- Marquee Banner inside Contact -->
+          <div class="contact-marquee">
+            <div class="marquee-track">
+              <div class="marquee-content">
+                <span>• LET'S WORK TOGETHER •</span>
+                <span>AVAILABLE FOR Q3/Q4 2026</span>
+                <span>• LET'S WORK TOGETHER •</span>
+                <span>CRAFTING LUXURY DIGITAL</span>
+                <span>• LET'S WORK TOGETHER •</span>
+                <span>AVAILABLE FOR Q3/Q4 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Links inside Dark Container -->
+          <footer class="site-footer">
+            <div class="footer-grid">
+              <div class="footer-col">
+                <span class="footer-logo">KIRTI©</span>
+                <p class="footer-copy">© 2026 KIRTI GUPTA.<br>ALL RIGHTS RESERVED.</p>
+              </div>
+
+              <div class="footer-col">
+                <span class="footer-heading">NAVIGATION</span>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+                <a href="#process" class="footer-link">Process</a>
+              </div>
+
+              <div class="footer-col">
+                <span class="footer-heading">SOCIALS</span>
+                <a href="https://dribbble.com" target="_blank" rel="noopener" class="footer-link hover-underline">Dribbble <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://behance.net" target="_blank" rel="noopener" class="footer-link hover-underline">Behance <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://figma.com" target="_blank" rel="noopener" class="footer-link hover-underline">Figma <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link hover-underline">Instagram <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-link hover-underline">LinkedIn <i class="ri-arrow-right-up-line"></i></a>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- External JS Libraries (GSAP, ScrollTrigger, Lenis) -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
